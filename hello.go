@@ -1,7 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
-	fmt.Println("hello")
+	engine := gin.Default()
+
+	engine.GET("/", func(context *gin.Context) {
+		context.JSON(200, gin.H{
+			"message": "hello world",
+		})
+	})
+
+	engine.Run()
+
 }
