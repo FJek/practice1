@@ -3,18 +3,13 @@ package main
 import (
 	"container/list"
 	"fmt"
+
 )
 
 /**
 * @Author : awen
 * @Date : 2020/2/18 2:06 下午
  */
-
-
-type ListNode struct {
-	Val int
-	Next *ListNode
-}
 
 // 从尾到头打印链表
 func ReversePrint(head *ListNode) []int {
