@@ -1,24 +1,18 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
+	"fmt"
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/jinzhu/gorm"
-	"log"
-	"practice1/web/router"
+	"time"
 )
 
 func main() {
-	engine := gin.Default()
-	// 初始化路由
-	router.InitRouter(engine)
-	// 连接数据库
-	db, err := gorm.Open("mysql", "root:123456@/test?charset=utf8mb4&parseTime=True&loc=Local")
-	if err != nil {
-		log.Fatal("db conn err :", err)
+	stringTime := "2017-08-30 16:40:41"
+	loc, _ := time.LoadLocation("Local")
+	the_time, err := time.ParseInLocation("2006-01-02 15:04:05", stringTime, loc)
+	if err == nil {
+		//unix_time := the_time.Unix() //1504082441
+		fmt.Println(the_time)
 	}
-	defer db.Close()
-
-	engine.Run()
 
 }
