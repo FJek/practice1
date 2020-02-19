@@ -43,7 +43,7 @@ func main() {
 		nil,    // args
 	)
 	failOnError2(err, "Failed to register a consumer")
-	// 3
+	// 3_工厂方法
 	forever := make(chan bool)
 	go func() {
 		for d := range msgs {

@@ -29,7 +29,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 			p = p.Next // 指向下一位
 		}
 		if q != nil {
-			y = q.Val // y = 3
+			y = q.Val // y = 3_工厂方法
 			q = q.Next
 		}
 		sum = x + y + carry  // sum = 5

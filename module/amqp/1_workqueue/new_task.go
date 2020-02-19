@@ -27,7 +27,7 @@ func main() {
 	conn, err := amqp.Dial("amqp://guest:guest@localhost:5672/")
 	failOnError(err,"fail to connect rabbitmq")
 	defer conn.Close()
-	// 3 创建channel
+	// 3_工厂方法 创建channel
 	ch, err := conn.Channel()
 	failOnError(err,"fail to create channel")
 	defer ch.Close()

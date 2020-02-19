@@ -30,7 +30,7 @@ func main() {
 		})
 	})
 
-	// 3 这个处理器可以匹配 /user/john ， 但是它不会匹配 /user
+	// 3_工厂方法 这个处理器可以匹配 /user/john ， 但是它不会匹配 /user
 	r.GET("/user/:name", func(c *gin.Context) {
 		name := c.Param("name")
 		c.String(http.StatusOK, "Hello %s", name)

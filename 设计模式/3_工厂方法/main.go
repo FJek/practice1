@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"fzw/practice1/设计模式/工厂方法/factory"
+	"fzw/practice1/设计模式/3_工厂方法/factory"
 )
 
 /**

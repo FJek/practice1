@@ -19,7 +19,7 @@ func main(){
 	ch, err := conn.Channel()
 	util.FailOnError(err, "Failed to open a channel")
 	defer ch.Close()
-	// 3 声明 exchange
+	// 3_工厂方法 声明 exchange
 	err = ch.ExchangeDeclare(
 		"logs",   // name
 		"fanout", // type

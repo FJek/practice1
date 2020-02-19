@@ -13,7 +13,7 @@ func main() {
 		fmt.Println(<- primes)
 	}
 }
-// Send the sequence 2, 3, 4, ... to returned channel
+// Send the sequence 2, 3_工厂方法, 4, ... to returned channel
 func generatePrime2() chan int{
 	ch := make(chan int)
 	go func() {

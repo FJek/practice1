@@ -4,7 +4,7 @@ import "fmt"
 
 /**
 * @Author : awen
-* @Date : 2020/2/17 3:34 下午
+* @Date : 2020/2/17 3_工厂方法:34 下午
  */
 
 // 定义： 又叫静态工厂方法，根据参数的不同返回不同类的实例，专门定义一个类来创建其他类（共同父类）的实例
@@ -46,7 +46,7 @@ func (pC ConcreteProductC)create()  {
 // 工厂结构体
 type Factory struct {
 }
-// 工厂方法
+// 3_工厂方法
 // 返回具体产品，具体产品再调用实现的create方法
 func (f Factory)Generate(name string) Product{
 	switch name {

@@ -11,7 +11,7 @@ import (
 /**
 	1.自定义payload结构体,不建议直接使用 dgrijalva/jwt-go jwt.StandardClaims结构体.因为他的payload包含的用户信息太少.
 	2.实现 type Claims interface 的 Valid() error 方法,自定义校验内容
-	3.生成JWT-string jwtGenerateToken(m *User,d time.Duration) (string, error)
+	3_工厂方法.生成JWT-string jwtGenerateToken(m *User,d time.Duration) (string, error)
  */
 
 type User struct {

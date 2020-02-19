@@ -7,7 +7,7 @@ import (
 
 /**
 * @Author : awen
-* @Date : 2020/2/17 3:23 下午
+* @Date : 2020/2/17 3_工厂方法:23 下午
  */
 
 type example4 struct {

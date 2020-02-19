@@ -19,7 +19,7 @@ func main() {
 		ch = ch1
 	}
 }
-// Send the sequence 2, 3, 4, ... to returned channel
+// Send the sequence 2, 3_工厂方法, 4, ... to returned channel
 func generatePrime( ch chan int) {
 	for i := 2; ; i++ {
 		ch <- i
