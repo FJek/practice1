@@ -17,8 +17,8 @@ type example4 struct {
 var instance4 *example4
 var once sync.Once
 
+// 生成实例方法
 func GetInstance4() *example4 {
-
 	once.Do(func() {
 		instance4 = new(example4)
 		instance4.name = "第一次赋值单例"
