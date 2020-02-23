@@ -1,6 +1,6 @@
 package subject
 
-import "fzw/practice1/设计模式/观察者模式/observer"
+import "fzw/practice1/设计模式/7_观察者模式/observer"
 
 /**
 * @Author : awen
